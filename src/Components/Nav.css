@@ -1,0 +1,75 @@
+/*fix the input (overflow)*/
+.toggle {
+  display: flex;
+  justify-content: space-around;
+}
+.flag {
+  margin-right: 0.9rem;
+}
+.left-side {
+  display: flex;
+}
+.nav {
+  background-color: royalblue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 0.5rem;
+}
+.card-container {
+  background-color: lightgray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.card {
+  margin-top: 3rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.search-input {
+  overflow: hidden;
+  width: 8rem;
+  margin: 0;
+  position: relative;
+  height: 2rem;
+}
+.search-icon {
+  color: black;
+  position: absolute;
+  top: 3.8%;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+/*button toggle*/
+.button-container {
+  text-align: center;
+  margin-left: 0.5rem;
+}
+.switch {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: white;
+  border-radius: 18px;
+  transition: transform 1s;
+}
+.btn {
+  background-color: rgb(11, 33, 99);
+  width: 3rem;
+  height: 1.3rem;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}

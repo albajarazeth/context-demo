@@ -1,0 +1,33 @@
+.card-heading {
+  text-align: center;
+}
+input {
+  margin-bottom: 1.3rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: block;
+}
+.remember-me {
+  margin-bottom: 0.7rem;
+}
+.register {
+  width: 100%;
+}
+.remember-btn {
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border-color: lightgray;
+  margin-right: 4px;
+}
+
+.register {
+  color: #fff;
+  background-color: royalblue;
+  border: none;
+  padding: 0.7rem 0;
+}
+.drop-down {
+  margin: 1rem 0;
+}
