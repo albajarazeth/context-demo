@@ -1,16 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 import "./Nav.css";
 const Switch = () => {
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   return (
     <section>
       <div className="toggle">
         <p>Light</p>
-        <div class="button-container">
-          <button class="btn">
-            <div class="switch"></div>
+        <div className="button-container">
+          <button className="btn">
+            {/*click & update page content comp??*/}
+            <div onClick={toggleTheme} className="switch"></div>
           </button>
         </div>
       </div>
@@ -18,7 +21,10 @@ const Switch = () => {
   );
 };
 export default class Nav extends Component {
+  static contextType = ThemeContext;
   render() {
+    const { isDarkMode } = this.context;
+
     return (
       <nav className="nav">
         <div className="left-side">
